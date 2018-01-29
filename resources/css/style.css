@@ -1,0 +1,46 @@
+/* Universal Styles */
+
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: lightblue;
+  height: 64px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+header .desktop.logo {
+  font-size: 32px;
+}
+
+header .mobile {
+  display: none;
+}
+
+header nav ul {
+  display: flex;
+}
+
+/* Splash */
+
+
+/* Quote */
+
+
+/* Details */
+
+
+/* Courses */
+
+
+/* Exhibit */
+
+
+/* Footer */
