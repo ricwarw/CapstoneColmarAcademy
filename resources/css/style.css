@@ -3,6 +3,10 @@ html {
   font-size: 16px;
 }
 
+div {
+  box-sizing: border-box;
+}
+
 /* Header */
 header {
   position: static;
@@ -75,13 +79,14 @@ header nav ul a {
 
 .splash img {
   height: auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 .startbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 1rem;
 }
 
 .startbox h1 {
@@ -148,7 +153,7 @@ header nav ul a {
 }
 
 .reading_img {
-
+  padding: 2rem 1.5rem;
 }
 
 .quote {
@@ -174,7 +179,6 @@ header nav ul a {
 .quote img {
   height: auto;
   width: 100%;
-  padding: 2rem 1.5rem;
 }
 
 
@@ -185,7 +189,7 @@ header nav ul a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: stretch;
+  align-content: flex-start;
 }
 
 .detailbox {
@@ -193,6 +197,7 @@ header nav ul a {
   display: flex;
   align-items: center;
   border-bottom: 1px solid grey;
+  padding: 1rem;
 }
 
 .detailbox h3 {
@@ -208,21 +213,24 @@ header nav ul a {
   color: lightblue;
 }
 
+.detailimgmobile {
+  display: none;
+}
+
 .detailimg {
   width: 35%;
-  padding: 1rem;
 }
 
 .detailimg img {
   height: auto;
   width: 100%;
-
 }
 
 .detailtext {
   width: 65%;
   display: flex;
   flex-direction: column;
+  padding-left: 1rem;
 }
 
 #guest {
@@ -247,9 +255,15 @@ header nav ul a {
     align-content: stretch;
   }
 
-  .detailimg {
+  .detailimgmobile {
+    display: inherit;
     width: auto;
     padding: 1rem;
+  }
+
+  .detailimgmobile img {
+    height: auto;
+    width: 100%;
   }
 
   .detailbox {
@@ -259,11 +273,11 @@ header nav ul a {
   }
 
   .detailtext {
-    width: 65%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
 
   #guest {
@@ -273,6 +287,10 @@ header nav ul a {
 
   .detailbox {
     border-bottom: none;
+  }
+
+  .detailimg {
+    display: none;
   }
 }
 
@@ -300,11 +318,12 @@ header nav ul a {
   padding-left: 4.5rem;
   padding-right: 4.5rem;
   padding-bottom: 2rem;
+  justify-content: center;
 }
 
 .coursebox {
   background-color: white;
-  margin: 2rem;
+  margin: 1rem;
   flex-shrink: 1;
   flex-basis: 3rem;
 }
@@ -329,6 +348,7 @@ header nav ul a {
 
 .coursebox img {
   height: auto;
+  width: 350px;
 }
 
 @media only screen and (max-width: 760px) {
@@ -361,7 +381,7 @@ header nav ul a {
   .coursebox {
     display: block;
     background-color: lightgrey;
-    margin: 8px;
+    margin: .5rem 1rem;
     text-align: center;
   }
 
@@ -369,11 +389,91 @@ header nav ul a {
     padding-top: 1rem;
     padding-left: 1rem;
     font-size: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
   }
 
 }
 /* Exhibit */
 
+.section4 h1 {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.thesis_vid {
+  padding: 1rem 1.5rem 0 1.5rem;
+
+}
+
+.videoInsert {
+    position: relatie;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 60%;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.quote2 {
+  width: 60%;
+}
+
+.quote2 h1 {
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 1.5rem;
+}
+
+.quote2 h2 {
+  font-size: 1.75rem;
+  padding-bottom: 2rem;
+}
+
+.details2 {
+  width: 40%;
+  padding-top: 1rem;
+}
+
+.section4 {
+  display: flex;
+  position: relative;
+  flex-flow: wrap;
+}
+
+#fisma {
+  background-color: lightgrey;
+}
+
+.section4 .detailbox {
+  border: none;
+}
+
+@media only screen and (max-width: 760px) {
+
+  .quote2 {
+    width: 100%
+  }
+
+  .details2 {
+    display: none;
+  }
+
+  .section4 .quotebox {
+    display: none;
+  }
+
+  .thesis_vid {
+    padding: 0;;
+
+  }
+}
 
 /* Footer */
