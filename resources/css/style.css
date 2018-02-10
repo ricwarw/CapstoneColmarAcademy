@@ -1,6 +1,7 @@
 /* Universal Styles */
 html {
   font-size: 16px;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 div {
@@ -11,7 +12,7 @@ div {
 header {
   position: static;
   width: 100%;
-  background-color: lightblue;
+  background-color: rgb(116, 185, 168);
   height: 64px;
   display: flex;
   align-items: center;
@@ -19,6 +20,16 @@ header {
   padding-right: 1.5rem;
   justify-content: space-between;
   box-sizing: border-box;
+  font-weight: 500;
+  letter-spacing: .1rem;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: black;
 }
 
 header .logo {
@@ -27,7 +38,7 @@ header .logo {
 }
 
 header .desktop.logo {
-
+  padding-left: 0.75rem;
 }
 
 header .mobile {
@@ -90,12 +101,12 @@ header nav ul a {
 }
 
 .startbox h1 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   padding-bottom: 1rem;
 }
 
 .startbox h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 
@@ -103,10 +114,15 @@ header nav ul a {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
   color: white;
-  background-color: grey;
-  padding: 0.5rem 0;
+  background-color: rgb(116, 185, 168);
+  padding: 1rem 0;
   width: 95%;
+}
+
+.start_here:hover {
+  background-color: rgb(244, 130, 140);
 }
 
 @media only screen and (max-width: 760px) {
@@ -158,22 +174,22 @@ header nav ul a {
 
 .quote {
   width: 60%;
-  border-right: 1px solid grey;
 }
 
 .quotebox {
-  padding-left: 1.5rem;
-  padding-bottom: 2rem;
+  padding: 0rem 1.5rem 2rem 1.5rem;
 }
 
 .quote h1 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   padding-bottom: 1.5rem;
 }
 
 .quote h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   padding-bottom: 2rem;
+  font-family: 'Spectral', serif;
+  font-style: italic;
 }
 
 .quote img {
@@ -189,7 +205,7 @@ header nav ul a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: center;
 }
 
 .detailbox {
@@ -210,7 +226,7 @@ header nav ul a {
 }
 
 .detailbox a {
-  color: lightblue;
+  color: rgba(116, 185, 168, 0.8);
 }
 
 .detailimgmobile {
@@ -234,7 +250,15 @@ header nav ul a {
 }
 
 #guest {
-  background-color: lightgrey;
+  border-bottom: none;
+}
+
+.detailbox:hover {
+  background-color: rgba(116, 185, 168, 0.8);
+}
+
+.detailbox:hover a {
+  color: white;
 }
 
 @media only screen and (max-width: 760px) {
@@ -282,7 +306,6 @@ header nav ul a {
 
   #guest {
     padding-bottom: 2rem;
-    background-color: white;
   }
 
   .detailbox {
@@ -322,10 +345,18 @@ header nav ul a {
 }
 
 .coursebox {
-  background-color: white;
+
+}
+
+.coursegrid a {
   margin: 1rem;
   flex-shrink: 1;
   flex-basis: 3rem;
+  background-color: white;
+}
+
+.coursegrid a:hover {
+  box-shadow: 0.5rem 0.5rem 1rem 0.25rem rgba(116, 185, 168, 0.8), 0.5rem 0.75rem 1.5rem 0.25rem rgba(116, 185, 168, 0.75);
 }
 
 .coursebox h3 {
@@ -338,6 +369,7 @@ header nav ul a {
   padding-top: 0.5rem;
   padding-left: 1rem;
   padding-bottom: 0;
+  color: darkgrey;
 }
 
 .coursebox p {
@@ -378,11 +410,16 @@ header nav ul a {
     width: 100%;
   }
 
-  .coursebox {
+  .coursegrid a {
     display: block;
     background-color: lightgrey;
     margin: .5rem 1rem;
     text-align: center;
+  }
+
+  .coursegrid a:active,
+   .coursegrid a:hover{
+    box-shadow: 0rem 0.25rem 0.5rem 0rem rgba(116, 185, 168, 0.8), 0rem 0.25rem 0.5rem 0rem rgba(116, 185, 168, 0.75);
   }
 
   .coursebox h3 {
@@ -433,8 +470,10 @@ header nav ul a {
 }
 
 .quote2 h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   padding-bottom: 2rem;
+  font-family: 'Spectral', serif;
+  font-style: italic;
 }
 
 .details2 {
@@ -442,14 +481,14 @@ header nav ul a {
   padding-top: 1rem;
 }
 
+.details2 a {
+
+}
+
 .section4 {
   display: flex;
   position: relative;
   flex-flow: wrap;
-}
-
-#fisma {
-  background-color: lightgrey;
 }
 
 .section4 .detailbox {
@@ -477,3 +516,33 @@ header nav ul a {
 }
 
 /* Footer */
+
+footer {
+  border-top: 1px solid grey;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+footer a {
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .links {
+    display: none;
+  }
+
+  footer {
+    padding: 2rem 1.5rem 0rem 1.5rem;
+  }
+
+  footer .copyright {
+    padding: 1rem 0;
+  }
+
+}

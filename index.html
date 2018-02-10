@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral:400,400i" rel="stylesheet">
+    <link rel="shortcut icon" href="./resources/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/icons/favicon.ico" type="image/x-icon">
     <title>Colmar Academy</title>
   </head>
   <body>
@@ -11,10 +15,10 @@
   <!-- Header -->
   <header>
     <div class="logo">
-      <img src="./resources/images/ic-logo.svg">
+      <img src="./resources/images/ic-logo.svg" alt="Colmar Logo">
       <a href="index.html" class="desktop logo">COLMAR ACADEMY</a>
     </div>
-      <nav class="desktop">
+      <nav class="desktop" role="presentation">
         <ul>
           <li><a href="#">On campus</a></li>
           <li><a href="#">Online</a></li>
@@ -23,11 +27,11 @@
         </ul>
       </nav>
       <nav class="mobile">
-        <ul>
-          <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
+        <ul role="presentation">
+          <li><a href="#"><img src="./resources/images/ic-logo.svg" alt="home"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="on campus"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-online.svg" alt="online"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-login.svg" alt="login"></a></li>
         </ul>
       </nav>
     </header>
@@ -35,14 +39,16 @@
   <!-- Splash -->
   <div class="splash">
     <div class="bench_img">
-    <img src="./resources/images/banner.jpg" width="1104" height="816">
+    <img src="./resources/images/banner.jpg" width="1104" height="816" alt="students studying">
     </div>
-    <div class="startbox">
-      <h1>Learn Something new everyday</h1>
+    <div class="startbox" role="presentation">
+      <h1>Learn something new everyday</h1>
       <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-      <div class="start_here">
-        <span>Start here</span>
-      </div>
+      <a href="#">
+        <div class="start_here" role="presentation">
+        <span>START HERE</span>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -51,9 +57,9 @@
   <div class="section2">
     <div class="quote">
       <div class="reading_img">
-      <img src="./resources/images/information-main.jpg">
+      <img src="./resources/images/information-main.jpg" alt="student reading">
       </div>
-    <div class="quotebox">
+    <div class="quotebox" role="presentation">
       <h1>It doesn't hurt to keep practicing</h1>
       <h2>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h2>
       <p>Emanuel, Sr Strategist at Hiring.com</p>
@@ -62,40 +68,40 @@
 
   <!-- Details -->
   <div class="details">
-    <div class="detailbox" id="orientation">
+    <div class="detailbox" id="orientation" role="presentation">
       <div class="detailimg">
-      <img src="./resources/images/information-orientation.jpg">
+      <img src="./resources/images/information-orientation.jpg" alt="">
       </div>
       <div class="detailimgmobile">
-      <img src="./resources/images/information-orientation-mobile.jpg">
+      <img src="./resources/images/information-orientation-mobile.jpg" alt="">
       </div>
-      <div class="detailtext">
+      <div class="detailtext" role="presentation">
       <h3>Orientation date</h3>
       <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
       <a href="#">Read more</a>
       </div>
     </div>
-    <div class="detailbox" id="campus">
+    <div class="detailbox" id="campus" role="presentation">
       <div class="detailimg">
-      <img src="./resources/images/information-campus.jpg">
+      <img src="./resources/images/information-campus.jpg" alt="">
       </div>
       <div class="detailimgmobile">
-      <img src="./resources/images/information-campus-mobile.jpg">
+      <img src="./resources/images/information-campus-mobile.jpg" alt="">
       </div>
-      <div class="detailtext">
+      <div class="detailtext" role="presentation">
       <h3>Our campus</h3>
       <p>Find which campus is close by you</p>
       <a href="#">Read more</a>
       </div>
     </div>
-    <div class="detailbox" id="guest">
+    <div class="detailbox" id="guest" role="presentation">
       <div class="detailimg">
-      <img src="./resources/images/information-guest-lecture.jpg">
+      <img src="./resources/images/information-guest-lecture.jpg" alt="">
       </div>
       <div class="detailimgmobile">
-      <img src="./resources/images/information-guest-lecture-mobile.jpg">
+      <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="">
       </div>
-        <div class="detailtext">
+        <div class="detailtext" role="presentation">
         <h3>Our guest lecture</h3>
         <p>Join a keynote with Oliver Sack about music in medical treatment</p>
         <a href="#">Read more</a>
@@ -106,44 +112,44 @@
 
   <!-- Courses -->
   <div class="courses">
-    <h1>Start learning</h1>
+    <h1>Start learning:</h1>
     <div class="coursegrid">
-      <div class="coursebox">
-        <img src="./resources/images/course-software.jpg">
+      <a href="#"><div class="coursebox" role="presentation">
+        <img src="./resources/images/course-software.jpg" alt="">
         <h3>Software engineering</h3>
         <p class="caps">COURSES</p>
         <p>Web Development, Mobile Development, iOT, APIs</p>
-      </div>
-      <div class="coursebox">
-        <img src="./resources/images/course-computer-art.jpg">
+      </div></a>
+      <a href="#"><div class="coursebox" role="presentation">
+        <img src="./resources/images/course-computer-art.jpg" alt="">
         <h3>Computer art</h3>
         <p class="caps">COURSES</p>
         <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-      </div>
-      <div class="coursebox">
-        <img src="./resources/images/course-design.jpg">
+      </div></a>
+      <a href="#"><div class="coursebox" role="presentation">
+        <img src="./resources/images/course-design.jpg" alt="">
         <h3>Design</h3>
         <p class="caps">COURSES</p>
         <p>User Experience Design, User Research, Visual Design</p>
-      </div>
-      <div class="coursebox">
-        <img src="./resources/images/course-data.jpg">
+      </div></a>
+      <a href="#"><div class="coursebox" role="presentation">
+        <img src="./resources/images/course-data.jpg" alt="">
         <h3>Data</h3>
         <p class="caps">COURSES</p>
         <p>Data Science, Big Data, SQL, Data Visualization</p>
-      </div>
-      <div class="coursebox">
-        <img src="./resources/images/course-business.jpg">
+      </div></a>
+      <a href="#"><div class="coursebox" role="presentation">
+        <img src="./resources/images/course-business.jpg" alt="">
         <h3>Business</h3>
         <p class="caps">COURSES</p>
         <p>Producat Development, Business Development, Startup</p>
-      </div>
-      <div class="coursebox">
-        <img src="./resources/images/course-marketing.jpg">
+      </div></a>
+      <a href="#"><div class="coursebox" role="presentation">
+        <img src="./resources/images/course-marketing.jpg" alt="">
         <h3>Marketing</h3>
         <p class="caps">COURSES</p>
         <p>Analytics, Content Marketing, Mobile Marketing</p>
-      </div>
+      </div></a>
     </div>
   </div>
 
@@ -153,38 +159,46 @@
     <div class="quote2">
       <div class="thesis_vid">
         <video class="videoInsert" controls>
-          <source src="./resources/videos/thesis.mp4" type="video/mp4">
+          <source src="./resources/videos/thesis.mp4" type="video/mp4" alt="thesis video">
           Your browser does not support the video tag.
         </video>
       </div>
-    <div class="quotebox">
-      <h1>Reimagine urban</h1>
-      <h2>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h2>
+      <div class="quotebox" role="presentation">
+        <h1>Reimagine urban</h1>
+        <h2>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h2>
+      </div>
     </div>
-  </div>
 
-  <div class="details2">
-    <div class="detailbox" id="fisma">
-      <div class="detailimg">
-      <img src="./resources/images/thesis-fisma.jpg">
-      </div>
-      <div class="detailtext">
-      <h3>Fisma: Design and Prototype</h3>
-      <p>Designer showcase of new prototype product</p>
+    <div class="details2">
+      <div class="detailbox" id="fisma">
+        <div class="detailimg">
+          <a href="#"><img src="./resources/images/thesis-fisma.jpg" alt=""></a>
+        </div>
+      <div class="detailtext" role="presentation">
+        <h3>Fisma: Design and Prototype</h3>
+        <p>Designer showcase of new prototype product</p>
       </div>
     </div>
-    <div class="detailbox" id="nowthen">
-      <div class="detailimg">
-      <img src="./resources/images/thesis-now-and-then.jpg">
+      <div class="detailbox" id="nowthen">
+        <div class="detailimg">
+        <a href="#"><img src="./resources/images/thesis-now-and-then.jpg" alt=""></a>
+        </div>
+        <div class="detailtext" role="presentation">
+        <h3>Now and then</h3>
+        <p>Research study about New York</p>
       </div>
-      <div class="detailtext">
-      <h3>Now and then</h3>
-      <p>Research study about New York</p>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
+  <footer>
+      <span class="copyright">© 2016  Colmar Academy, All rights reserved</span>
+      <div class="links" role="presentation">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+  </footer>
 
   </body>
 </html>
